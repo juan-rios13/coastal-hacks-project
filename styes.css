@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+.fix-me{
+	position:fixed;
+	top:400px;
+}
+
+body{
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    text-align: center;
+    background-image: url('./background.jpg');
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content {
+    display: none;
+    background-color: red;
+    position: absolute;
+    width: 500%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: red;
+    background-color: #00A4BD;
+  }
+
+
+a{
+    color: black;
+    font-size: 24px;
+    font-weight:700;
+}
+
+
+h1{
+    font-weight: 700;
+    font-size:60px;
+    color: black;
+    text-align: center;
+}
+
+
+
