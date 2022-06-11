@@ -23,10 +23,44 @@
 }
 
 body{
+   /* display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    text-align: center;*/
+    background-image: url('./background.jpg');
+}
+
+main{
+    height: calc(100vh - 70px);
+    display: flex;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#san--fran{
     display:flex; flex-direction:column; justify-content:center;
     min-height:100vh;
     text-align: center;
-    background-image: url('./background.jpg');
+    background-image: url('./san--fran.jpg');
+    background-size: cover;
+}
+
+#miami{
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    text-align: center;
+    background-image: url('./miami.jpg');
+    background-size: cover;
+}
+
+#venice{
+    display:flex; flex-direction:column; justify-content:center;
+    min-height:100vh;
+    text-align: center;
+    background-image: url('./venice.jpg');
+    background-size: cover;
 }
 
 .dropdown {
@@ -37,12 +71,15 @@ body{
     display: none;
     background-color: red;
     position: absolute;
-    width: 500%;
+    width: 100%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
   }
   .dropdown:hover .dropdown-content {
-    display: block;
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
   }
   .dropdown-content a {
     display: block;
@@ -69,6 +106,42 @@ h1{
     color: black;
     text-align: center;
 }
+
+ul#episodes {
+    float: left;
+    margin:  0 10px;
+    padding: 0;
+    width: 35%;
+  }
+
+  ul#episodes > li {
+    list-style-type: none;
+  }
+
+  button {
+    border-radius:  7px;
+    border: 0;
+    background: #191414;
+    color: #fff;
+    padding:  10px;
+    margin:  0 0 3px 0;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #1Db954;
+  }
+
+  nav{
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 16px;
+
+}
+
 
 
 
