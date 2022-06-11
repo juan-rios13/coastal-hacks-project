@@ -23,10 +23,8 @@
 }
 
 body{
-   /* display:flex; flex-direction:column; justify-content:center;
-    min-height:100vh;
-    text-align: center;*/
     background-image: url('./background.jpg');
+    background-size: cover;
 }
 
 main{
@@ -88,7 +86,7 @@ main{
     text-decoration: none;
   }
   .dropdown-content a:hover {
-    color: red;
+    color: rgb(221, 255, 0);
     background-color: #00A4BD;
   }
 
@@ -134,14 +132,16 @@ ul#episodes {
   }
 
   nav{
-    height: 70px;
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 0 16px;
-
+    height: 100px;
+    flex-direction: row-reverse;
 }
 
 
-
-
+footer{
+    width: 100%;
+    text-align: center;
+}
+   
